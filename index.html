@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .header {
+  padding: 60px;
+  text-align: center;
+  background: #30413d;
+  color: white;
+  font-size: 30px;
+}
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/thisimg.jpg" height="200" width="300">
+      <p><h2>Thomas Burns</h2></p>
+      Web Developer
+      <a target="blank" href="https://www.github.com/TomTheWebDev">Github</a>
+    </div>
+    <center><h1>webDev timeline.</h1></center>
+<div class="container">
+    <div class="timeline">
+      <ul>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">feb, 2022</h3>
+            <h1><a href="https://www.sccrtp.com" target="_blank">sccrtp.com</a></h1>
+            <p>I used ’HTML’ and ’CSS’ to create a website. The Functionality includes ’Anchors’, ’Links’, and ’Forms’ connected to ’Google Sheets’ to collect user data</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">feb, 2022</h3>
+            <h1><a href="https://rontrellongo.com" target="_blank">rontrellongo.com</a></h1>
+            <p>I used 'WordPress' to create a landing page. The Functionality of the site includes ’Comment box input’</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">mar, 2022</h3>
+            <h1><a href="https://receiptocean.com" target="_blank">receiptocean.com</a></h1>
+            <p>I used ’HTML’, ’CSS’, ’PHPmyAdmin’, and ’SQL’ to create a web app. The Functionality of the site includes ’Registration and Login System’ and ’Creating, reviewing, updating or deleting Database Data’</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">mar, 2022</h3>
+            <h1><a href="https://cryptoscurrent.com" target="_blank">cryptoscurrent.com</a></h1>
+            <p>I used ’HTML’, ’CSS’, ’JAVASCRIPT’, ’NODE.js’, ’REACT’ and ’API’ to create a website that displays current Cryptocurrency data. The Functionality of the site includes ’Api Calls’, a ’Header’ and ’Search Bar’</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">april, 2022</h3>
+            <h1><a href="https://nftdizzy.com" target="_blank">nftdizzy.com</a></h1>
+            <p>I used ’HTML’, ’CSS’, ’JAVASCRIPT’, ’Stripe’, ’PHPmyAdmin’ and ’SQL’ to create a website that allows users to trade digital goods. The Functionality of the site includes ’CRUD Operations’, a ’Global Marketplace’ and ’Stripe Checkout’</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-content">
+            <h3 class="date">may, 2022</h3>
+            <h1>tomthedev.online</h1>
+            <p>I used ’HTML’ and ’CSS’ to create a portfolio website. The Functionality of the site includes ’Links’</p>
+          </div>
+          </li>
+          <li>
+          <div class="timeline-content">
+            <h3 class="date">june, 2022</h3>
+            <h1><a href="https://github.com/TomTheWebDev" target="_blank">github.com/Tom...</a></h1>
+            <p>Created a Github account and first repository</p>
+          </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
