@@ -6,11 +6,33 @@
     <style>
       .header {
   padding: 60px;
-  text-align: center;
-  background: #30413d;
+  text-align: left;
+  background: white;
+  color: black;
+  font-size: 30px;
+}
+        .aheader {
+    position: absolute;
+    top: 17px;
+    right: 30px;
   color: white;
   font-size: 30px;
 }
+        .aaheader {
+    position: absolute;
+    top: 17px;
+    right: 150px;
+  color: white;
+  font-size: 30px;
+}
+        .aaaheader {
+    position: absolute;
+    top: 17px;
+    right: 290px;
+  color: white;
+  font-size: 30px;
+}
+
     </style>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
@@ -27,9 +49,9 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 100px 0;
-  background-color: #111;
+  background-color: grey;
 }
 .timeline {
   width: 80%;
@@ -78,7 +100,7 @@ html {
     transform: translateX(-50%);
     width: 2px;
     height: 100%;
-    background-color: gray;
+    background-color: black;
   }
   .timeline ul li {
     width: 50%;
@@ -103,7 +125,7 @@ html {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: white;
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
@@ -127,12 +149,20 @@ html {
   </head>
   <body>
     <div class="header">
-      <img src="img/thisimg.jpg" height="200" width="300">
+      <img src="img/thisimg.jpg" height="180" width="260">
       <p><h2>Thomas Burns</h2></p>
-      Web Developer
-      <a target="blank" href="https://www.github.com/TomTheWebDev">Github</a>
+      Front End Web Developer
     </div>
-    <center><h1>webDev timeline.</h1></center>
+    <div class="aheader">
+        <button onclick="window.open('https://www.github.com/TomTheWebDev')" style="font-size:24px">Github <i class="fa fa-github"></i></button></div>
+        <div class="aaheader">
+        <button onclick="window.open('https://www.linkedin.com/in/thomas-burns-dev/')" style="font-size:24px">LinkedIn <i class="fa fa-github"></i></button><br>
+    </div>
+    <div class="aaaheader">
+        <button onclick="window.open('https://www.youtube.com/channel/UCHn5j0ekRT6cPh8SLT5wr4A')" style="font-size:24px">Youtube <i class="fa fa-github"></i></button><br>
+    </div>
+    <hr>
+    <center><h1><style color: blanchedalmond>Websites</style></h1></center>
 <div class="container">
     <div class="timeline">
       <ul>
