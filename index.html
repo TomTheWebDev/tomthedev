@@ -1,222 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      .header {
-  padding: 60px;
-  text-align: left;
-  background: white;
-  color: black;
-  font-size: 30px;
-}
-        .aheader {
-    position: absolute;
-    top: 17px;
-    right: 30px;
-  color: white;
-  font-size: 30px;
-}
-        .aaheader {
-    position: absolute;
-    top: 17px;
-    right: 150px;
-  color: white;
-  font-size: 30px;
-}
-        .aaaheader {
-    position: absolute;
-    top: 17px;
-    right: 290px;
-  color: white;
-  font-size: 30px;
-}
+<html>
+<head>
+	<title>TomTheDev</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-    </style>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Montserrat";
-}
-.container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 100px 0;
-  background-color: grey;
-}
-.timeline {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-.timeline ul {
-  list-style: none;
-}
-.timeline ul li {
-  padding: 20px;
-  background-color: #1e1f22;
-  color: white;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.timeline ul li:last-child {
-  margin-bottom: 0;
-}
-.timeline-content h1 {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-.timeline-content p {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
-}
-.timeline-content .date {
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-@media only screen and (min-width: 768px) {
-  .timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: black;
-  }
-  .timeline ul li {
-    width: 50%;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(-30px);
-    border-radius: 20px 0px 20px 20px;
-  }
-  .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(30px);
-    border-radius: 0px 20px 20px 20px;
-  }
-  .timeline ul li::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: white;
-    top: 0px;
-  }
-  .timeline ul li:nth-child(odd)::before {
-    transform: translate(50%, -50%);
-    right: -30px;
-  }
-  .timeline ul li:nth-child(even)::before {
-    transform: translate(-50%, -50%);
-    left: -30px;
-  }
-  .timeline-content .date {
-    position: absolute;
-    top: -30px;
-  }
-  .timeline ul li:hover::before {
-    background-color: aqua;
-  }
-}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <img src="img/thisimg.jpg" height="180" width="260">
-      <p><h2>Thomas Burns</h2></p>
-      Front End Web Developer
-    </div>
-    <div class="aheader">
-        <button onclick="window.open('https://www.github.com/TomTheWebDev')" style="font-size:24px">Github <i class="fa fa-github"></i></button></div>
-        <div class="aaheader">
-        <button onclick="window.open('https://www.linkedin.com/in/thomas-burns-dev/')" style="font-size:24px">LinkedIn <i class="fa fa-github"></i></button><br>
-    </div>
-    <div class="aaaheader">
-        <button onclick="window.open('https://www.youtube.com/channel/UCHn5j0ekRT6cPh8SLT5wr4A')" style="font-size:24px">Youtube <i class="fa fa-github"></i></button><br>
-    </div>
-    <hr>
-    <center><h1><style color: blanchedalmond>Websites</style></h1></center>
-<div class="container">
-    <div class="timeline">
-      <ul>
-        <li>
-          <div class="timeline-content">
-            <h3 class="date">feb, 2022</h3>
-            <h1><a href="https://sccrtp.com" target="_blank">sccrtp.com</a></h1>
-            <p>[HTML, CSS]. Website with Forms connected to Google Sheets to collect user data</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-content">
-            <h3 class="date">feb, 2022</h3>
-            <h1><a href="https://rontrellongo.com" target="_blank">rontrellongo.com</a></h1>
-            <p>[WordPress]. website made with CMS</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-content">
-            <h3 class="date">mar, 2022</h3>
-            <h1><a href="https://receiptocean.com" target="_blank">receiptocean.com</a></h1>
-            <p>[HTML, CSS, PHP, SQL]. Website includes Registration and Login System. Can interact with relational DB.</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-content">
-            <h3 class="date">mar, 2022</h3>
-            <h1><a href="https://cryptoscurrent.com" target="_blank">cryptoscurrent.com</a></h1>
-            <p>[HTML, CSS, JAVASCRIPT, NODE.js, REACT]. Website displays current Cryptocurrency data from API.’</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-content">
-            <h3 class="date">april, 2022</h3>
-            <h1><a href="https://nftdizzy.com" target="_blank">nftdizzy.com</a></h1>
-            <p>[HTML, CSS, JAVASCRIPT, Stripe, PHP, SQL] Website allows users to trade digital assets globally in real-time using relational DB.</p>
-          </div>
-        </li>
-        <li>
-          <div class="timeline-content">
-            <h3 class="date">may, 2022</h3>
-            <h1>tomthedev.online</h1>
-            <p>[HTML, CSS] Portfolio website includes links to past projects.</p>
-          </div>
-          </li>
-          <li>
-          <div class="timeline-content">
-            <h3 class="date">june, 2022</h3>
-            <h1><a href="https://github.com/TomTheWebDev" target="_blank">github.com/Tom...</a></h1>
-            <p>Created a Github page</p>
-          </div>
-          </li>
-      </ul>
-    </div>
-  </div>
+</head>
+<body>
+
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Portfo<span>lio</span></h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Me</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<a href="#" class="btn">Subscribe</a>
+		</nav>
+
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Thomas <span>Burns</span></h1>
+			<h3>I'm a Web Developer.</h3>
+			<div class="newslatter">
+				<form>
+					<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+					<input type="submit" name="submit" value="Lets Start">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<section class="about">
+		<div class="main">
+			<img src="img/thisimg.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Developer <span>& Designer</span></h5>
+				<p>I am a front-end web developer. I can provide clean code and modern design. I also make websites compatible with different browsers and devices. I mostly use HTML/CSS, Javascript and PHP.</p>
+				<button type="button">Let's Talk</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="service">
+		<div class="title">
+			<h2>Websites I built</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>SCCRTP</h5>
+				<div class="pra">
+					<p>[HTML, CSS]. Website with Forms connected to Google Sheets to collect user data</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://sccrtp.com">Visit Site</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>RECIEPTOCEAN</h5>
+				<div class="pra">
+					<p>[HTML, CSS, PHP, SQL]. Website includes Registration and Login System. Can interact with relational DB.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://receiptocean.com">Visit Site</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>CRYPTOSCURRENT</h5>
+				<div class="pra">
+					<p>[HTML, CSS, JAVASCRIPT, NODE.js, REACT]. Website displays current Cryptocurrency data from API.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://cryptoscurrent.com">Visit Site</a>
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>NFTDIZZY</h5>
+				<div class="pra">
+					<p>[HTML, CSS, JAVASCRIPT, Stripe, PHP, SQL] Website allows users to trade digital assets globally in real-time using relational DB.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://nftdizzy.com">Visit Site</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact-me">
+		<p>Set up a time to talk more</p>
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
+
+	<footer>
+		<p>Thomas Burns</p>
+		<p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-youtube"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+			<a href="#"><i class="fab fa-github"></i></a>
+		</div>
+		<p class="end">tomTheDev.online</p>
+	</footer>
 </body>
 </html>
