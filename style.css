@@ -1,8 +1,9 @@
 *{
-	padding: 0;
+	padding: 1;
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 .hero{
 	height: 65vh;
